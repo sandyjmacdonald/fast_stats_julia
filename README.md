@@ -7,14 +7,16 @@ of the total sequence length lies when the sequences are sorted in order of
 descending length.
 
 Runs significantly faster for large numbers of sequences than the Python version.
-For example, this Julia version ran through 5,000,000 250 base pair sequences in
-28.65 seconds compared to 6 minutes 44.55 seconds for the Python version.
+For example, this Julia version ran through 5,000,000 250 base pair sequences
+(gzipped fastq) in 28.65 seconds compared to 6 minutes 44.55 seconds for the
+Python version.
 
 ### Dependencies
 
 Requires the [ArgParse](http://docs.julialang.org/en/release-0.1/stdlib/argparse/)
-module for parsing the command line arguments. You can install it by opening an
-interactive Julia prompt and typing:
+module for parsing the command line arguments, and the
+[GZip](https://github.com/JuliaLang/GZip.jl) module for reading gzipped input.
+You can install these by opening an interactive Julia prompt and typing:
 
 	Pkg.add("ArgParse")
 	Pkg.add("GZip")
