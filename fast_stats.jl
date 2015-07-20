@@ -3,9 +3,9 @@
 # 50% of the total sequence length lies when the sequences are sorted in order
 # of descending length.
 
-require("argparse")
+#require("argparse")
 using ArgParse
-require("gzip")
+#require("gzip")
 using GZip
 
 
